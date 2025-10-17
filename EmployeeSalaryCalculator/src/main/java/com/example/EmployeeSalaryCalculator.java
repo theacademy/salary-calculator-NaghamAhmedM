@@ -59,14 +59,15 @@ public class EmployeeSalaryCalculator
 				if(HW <= standardWorkingHours)
 				{
 					//YOUR CODE STARTS HERE
-					 
+					 grossSalary = HW * HR;
 
 					//YOUR CODE ENDS HERE
 				}
 				else
 				{
 					//YOUR CODE STARTS HERE
- 
+                    //If worked more than the standard working hours then the additional time is multiplied by the doubled salary
+                    grossSalary = (standardWorkingHours * HR) + ((HW - standardWorkingHours) * (HR * 2));
 
 					//YOUR CODE ENDS HERE
 				}
